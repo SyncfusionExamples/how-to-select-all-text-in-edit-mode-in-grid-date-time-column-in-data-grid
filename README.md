@@ -3,7 +3,7 @@
 ## About the sample
 This example illustrates how to select all text in edit mode in GridDateTimeColumn in DataGrid(SfDataGrid)?
 
-By default, SfDataGrid  enters into edit mode in GridDateTimeColumn the entire text is not selected. You can achieve this by customizing the GridDateTimeCellRenderer.
+By default,  [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) enters into edit mode in GridDateTimeColumn the entire text is not selected. You can achieve this by overriding [OnInitializeEditElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#Syncfusion_WinForms_DataGrid_Renderers_GridDateTimeCellRenderer_OnInitializeEditElement_Syncfusion_WinForms_DataGrid_DataColumnBase_Syncfusion_WinForms_GridCommon_ScrollAxis_RowColumnIndex_Syncfusion_WinForms_Input_SfDateTimeEdit_) in [GridDateTimeCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html).
 
 ```C#
 this.sfDataGridSample.CellRenderers.Remove("DateTime"); 
